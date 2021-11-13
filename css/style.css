@@ -1,0 +1,256 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;700&display=swap');
+
+* {
+    margin: 0px auto;
+    box-sizing: border-box;
+    padding: 0px;
+    font-family: var(--ff--primary);
+}
+
+:root {
+    --clr--yellow:#FFB539;
+    --clr--orange: #FF8404;
+    --clr--greyson: #ebebeb;
+    --clr--black: #000;
+    --clr--footer-color:#262626;
+
+    /* font */
+    --ff--primary:'Poppins', 'san-serif';
+
+    --fw--bold: 700;
+    --fw--regular: 400;
+    --fw--thin:300;
+    --fs--fontsizelink:1.2rem;
+}
+
+
+nav{
+    background-color: var(--clr--yellow);
+}
+
+nav > img {
+    width:70px;
+}
+
+nav > #menubar{
+    text-decoration: none;
+    color: var(--clr--black);
+    margin-right: 20px;
+}
+
+
+h1{
+    font-weight: var(--fw--bold);
+    font-size: 3.5rem;
+    letter-spacing: -0.05em;
+    text-align: center;
+    
+}
+
+h2{
+    font-weight: var(--fw--bold);
+    font-size: 3rem;
+    letter-spacing: -0.05em;
+    text-align: center;
+}
+
+#wrapper{
+    max-width: 1024px;
+    width: 100%;
+    margin: 0 auto;
+    position: relative;
+}
+
+.header-container > p {
+    max-width: 800px;
+    text-align: center;
+    margin: 1rem auto;
+}
+
+.header-container > a {
+    background-color: #fff;
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    color: var(--clr--black);
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight:var(--fw--bold);
+    color: var(--clr--orange);
+    margin-bottom: 2rem;
+    font-size: var(--fs--fontsizelink);
+
+   
+}
+
+.header-container > h1 {
+    margin: 0 auto;
+}
+
+
+.header-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.float-burger{
+    position: absolute;
+    top: 320px;
+    right:0;
+    width: 250px;
+    z-index: +1;
+}
+
+@media screen and (max-width: 800px) {
+.float-burger{
+    display: none;
+}
+}
+    
+
+/* sections */
+.section1-background {
+    background-color: var(--clr--yellow);
+    padding: 5rem 0;
+}
+
+.section2-background{
+    background-color: var(--clr--black);
+    padding: 3rem 0;
+}
+
+.section2-background h2 {
+    color: #fff;
+    margin-bottom: 3rem;
+}
+
+.advert {
+    margin:2.5rem 0;
+}
+
+.item{
+    min-width: 250px;
+    max-width: 300px;
+    height: 300px;
+    background-color: #fff;
+    border-radius: 1.5rem;
+    padding:1.0rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+}
+
+.item > img {
+   width: 115.6px !important;
+}
+
+.item > h3 {
+    font-weight: var(--fw--bold);
+    color:var(--clr--orange);
+    margin-top: 1rem;
+
+}
+
+.item > p {
+    font-weight: var(--fw--bold);
+    
+}
+
+
+.item > a {
+    background-color:var(--clr--orange);
+    padding: 0.5rem 3rem;
+    text-decoration: none;
+    border-radius: 0.5rem;
+    text-align: center;
+    font-weight:var(--fw--bold);
+    color: #fff;
+    width: 90%;
+    font-size: var(--fs--fontsizelink);
+    position: absolute;
+    bottom: 11px;
+  
+
+
+}
+
+footer {
+    background-color:var(--clr--greyson);
+    padding: 3rem 0;
+}
+
+.footer-link {
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+@media screen and (max-width:425px){
+    .footer-ul{
+        flex-direction: column;
+    }
+
+    .footer-li{
+        margin: 15px auto;
+    }
+
+    .socialmedia-group {
+        margin-top: 30px;
+    }
+
+    .footer-link{
+        flex-direction: column;
+    }
+}
+
+
+.links-group > .footer-ul {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 0;
+    padding: 0;
+}
+
+.links-group > .footer-ul .footer-li {
+    list-style: none;
+}
+
+.footer-li > a{
+    text-decoration: none;
+    margin: 0 0.7rem;
+    color: var(--clr--black);
+    font-weight: var(--fw--bold);
+    letter-spacing: -0.05rem;
+}
+
+.socialmedia-group{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.socialmedia-group > div {
+    margin: 0 0.8rem;
+}
+
+.footer-text{
+margin: 3rem 0;
+}
+
+.payment-logo{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.payment-logo > img {
+    width:100px;
+}
+
