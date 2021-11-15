@@ -37,3 +37,4 @@ getty.addEventListener("click", change);
 function change(){
     alert("Thank you for visiting, Menu is under development")
 }
+

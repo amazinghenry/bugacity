@@ -38,6 +38,29 @@ nav > #menubar{
     margin-right: 20px;
 }
 
+/* navigation */
+
+.navigation {
+    background-color: #fff;
+    height: 100vh;
+    width: 40vw;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 3;
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 100px 0;
+    box-shadow: 5px 0px 5px 2px #1818184d;
+}
+
+@media screen and (max-width: 470px) {
+    .navigation {
+        width: 60vw;
+    }
+}
 
 h1{
     font-weight: var(--fw--bold);
