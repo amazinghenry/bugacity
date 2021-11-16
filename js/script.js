@@ -30,11 +30,16 @@ timeline
 
 
 
-const getty = document.querySelector("#menubar");
+const menuOn = document.querySelector('#menubar').addEventListener("click", showMenu);
+const menuOff = document.querySelector('#cancel').addEventListener("click", hideMenu);
+const headin = document.querySelector('h1');
 
-getty.addEventListener("click", change);
 
-function change(){
-    alert("Thank you for visiting, Menu is under development")
+function showMenu(e){
+    e.preventDefault();
+    document.querySelector('.navigation').style.display='block';
 }
 
+function hideMenu(){
+    document.querySelector('.navigation').style.display='none';
+}
