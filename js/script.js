@@ -38,8 +38,25 @@ const headin = document.querySelector('h1');
 function showMenu(e){
     e.preventDefault();
     document.querySelector('.navigation').style.display='block';
+    document.querySelector('.blanket').style.display='block';
+    // gsap.from('.navigation', {duration:0.5, x:'-100%'}   )
+    // gsap.from('.nav-a', {duration:0.5, opacity: 0, delay:0.5, stagger: .2, ease:''}   )
+
+    const timeline2 = gsap.timeline({defaults: {duration:0.3}})
+    timeline2
+        .from('.navigation', {x : '-100%'})
+        .from('.nav-a', {opacity: 0,}  )
+
 }
 
 function hideMenu(){
     document.querySelector('.navigation').style.display='none';
+    document.querySelector('.blanket').style.display='none';
+        timeline2.reverse()
+
+    //  const timeline = gsap.timeline({defaults: {duration:0.3}})
+    // timeline
+    //     .from('.navigation', {x : '-100%'})
+    //     .from('.nav-a', {opacity: 0,}  )
+    
 }
