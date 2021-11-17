@@ -58,5 +58,6 @@ function hideMenu(){
     // timeline
     //     .from('.navigation', {x : '-100%'})
     //     .from('.nav-a', {opacity: 0,}  )
+    // deleted
     
 }
